@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariel Jude | Executive Operations, Design & Mechanical Engineering</title>
+    <!-- Google Fonts: Cormorant Garamond (Serif) & Plus Jakarta Sans (Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        alabaster: '#FAF8F5',
+                        cream: '#F3EFEA',
+                        charcoal: '#161B22',
+                        slateMuted: '#525866',
+                        champagne: '#B8924A',
+                        champagneDark: '#9A7736',
+                        borderSubtle: '#E5DFD5',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'editorial': '0 20px 50px -15px rgba(22, 27, 34, 0.08)',
+                        'card-hover': '0 24px 48px -12px rgba(22, 27, 34, 0.12)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-alabaster text-charcoal font-sans antialiased selection:bg-champagne/20 selection:text-charcoal overflow-x-hidden">
+
+    <!-- =====================================================================
+         1. STICKY MINIMALIST HEADER
+         ===================================================================== -->
+    <header id="navbar" class="sticky top-0 z-40 w-full bg-alabaster/90 backdrop-blur-md border-b border-borderSubtle/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 h-20 flex items-center justify-between">
+            <!-- Brand / Monogram -->
+            <a href="#" class="flex items-center gap-3.5 group focus:outline-none">
+                <div class="w-10 h-10 rounded-full border border-champagne/60 flex items-center justify-center bg-white shadow-sm group-hover:border-champagne group-hover:bg-charcoal transition-colors duration-300">
+                    <span class="font-serif text-lg font-semibold tracking-wider text-charcoal group-hover:text-alabaster transition-colors">AJ</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif text-2xl font-semibold tracking-tight text-charcoal leading-none">Ariel Jude</span>
+                    <span class="text-[10px] uppercase tracking-[0.22em] text-slateMuted mt-1">Portfolio & Advisory</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-9 text-sm font-medium text-slateMuted">
+                <a href="#about" class="hover:text-charcoal transition-colors py-2">Profile</a>
+                <a href="#services" class="hover:text-charcoal transition-colors py-2">Core Services</a>
+                <a href="#approach" class="hover:text-charcoal transition-colors py-2">Standards</a>
+                <a href="#contact" class="hover:text-charcoal transition-colors py-2">Inquiries</a>
+            </nav>
+
+            <!-- Action & Mobile Menu Button -->
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-charcoal text-alabaster text-xs uppercase tracking-[0.16em] font-medium hover:bg-champagne transition-colors duration-300 shadow-sm">
+                    <span>Book a Consultation</span>
+                    <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                </a>
+                <button id="mobile-menu-btn" aria-label="Toggle Menu" class="md:hidden p-2.5 rounded-lg border border-borderSubtle text-charcoal hover:bg-cream transition-colors">
+                    <i data-lucide="menu" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-alabaster border-b border-borderSubtle px-6 py-6 space-y-4">
+            <nav class="flex flex-col space-y-3 text-base font-medium text-charcoal">
+                <a href="#about" class="mobile-link py-1.5 border-b border-borderSubtle/50">Profile</a>
+                <a href="#services" class="mobile-link py-1.5 border-b border-borderSubtle/50">Core Services</a>
+                <a href="#approach" class="mobile-link py-1.5 border-b border-borderSubtle/50">Standards</a>
+                <a href="#contact" class="mobile-link py-1.5">Inquiries</a>
+            </nav>
+            <a href="#contact" class="mobile-link block w-full text-center px-5 py-3 rounded-full bg-charcoal text-alabaster text-xs uppercase tracking-[0.16em] font-medium">
+                Book a Consultation
+            </a>
+        </div>
+    </header>
+
+    <!-- =====================================================================
+         2. HERO SECTION (Two-Column Editorial Layout with Uploaded Portrait)
+         ===================================================================== -->
+    <section id="about" class="relative pt-12 pb-20 sm:pt-16 sm:pb-28 lg:pt-24 lg:pb-32 overflow-hidden">
+        <!-- Subtle Decorative Grid Lines -->
+        <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left Column: Editorial Introduction -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-cream border border-borderSubtle">
+                        <span class="w-1.5 h-1.5 rounded-full bg-champagne"></span>
+                        <span class="text-xs uppercase tracking-[0.2em] font-medium text-slateMuted">Executive Virtual Assistance & Engineering Solutions</span>
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-[64px] font-medium text-charcoal leading-[1.08] tracking-tight">
+                        Precision Operations, <span class="italic font-normal text-champagne">Creative Clarity</span> & Technical Expertise.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slateMuted leading-relaxed max-w-2xl font-light">
+                        I am <strong class="font-medium text-charcoal">Ariel Jude</strong>, a multidisciplinary specialist bridging the gap between high-level executive operations, visual brand communication, accurate financial bookkeeping, and mechanical engineering execution. Designed for founders, executives, and engineering leaders who value meticulous rigor and refined presentation.
+                    </p>
+
+                    <!-- CTA Group -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                        <a href="#services" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full bg-charcoal text-alabaster text-xs uppercase tracking-[0.18em] font-medium hover:bg-champagne transition-all duration-300 shadow-editorial">
+                            <span>Explore Six Core Services</span>
+                            <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#contact" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full bg-transparent border border-charcoal/25 text-charcoal text-xs uppercase tracking-[0.18em] font-medium hover:border-charcoal hover:bg-cream/60 transition-all duration-300">
+                            <span>Request a Proposal</span>
+                        </a>
+                    </div>
+
+                    <!-- Subtle Credential Pillars -->
+                    <div class="pt-6 border-t border-borderSubtle grid grid-cols-3 gap-6 max-w-xl">
+                        <div>
+                            <p class="font-serif text-2xl sm:text-3xl font-semibold text-charcoal">06</p>
+                            <p class="text-xs text-slateMuted mt-0.5">Specialized Disciplines</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-2xl sm:text-3xl font-semibold text-charcoal">100%</p>
+                            <p class="text-xs text-slateMuted mt-0.5">Confidential & Accurate</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-2xl sm:text-3xl font-semibold text-charcoal">Dual</p>
+                            <p class="text-xs text-slateMuted mt-0.5">Admin & Engineering Rigor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Framed Architectural Portrait -->
+                <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                    <div class="relative w-full max-w-sm sm:max-w-md">
+                        <!-- Offset Decorative Champagne Frame -->
+                        <div class="hidden sm:block absolute -inset-3 translate-x-3 translate-y-3 rounded-2xl border border-champagne/40 pointer-events-none"></div>
+                        
+                        <!-- Portrait Card -->
+                        <div class="relative bg-white p-3.5 sm:p-4 rounded-2xl border border-borderSubtle shadow-editorial">
+                            <div class="relative overflow-hidden rounded-xl bg-cream aspect-[4/4.6]">
+                                <img 
+                                    src="Ariel_Jude.jfif" 
+                                    alt="Ariel Jude — Executive Assistant & Mechanical Engineering Specialist" 
+                                    onerror="this.onerror=null; this.src='https://placehold.co/600x700/F3EFEA/161B22?text=Ariel+Jude';"
+                                    class="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-[1.02]"
+                                />
+                                <!-- Subtle Bottom Gradient Vignette for Caption Readability -->
+                                <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-charcoal/50 via-charcoal/15 to-transparent pointer-events-none"></div>
+                                
+                                <!-- Floating Editorial Status Badge -->
+                                <div class="absolute bottom-3.5 left-3.5 right-3.5 bg-alabaster/95 backdrop-blur-md px-4 py-3 rounded-lg border border-borderSubtle/90 flex items-center justify-between shadow-sm">
+                                    <div>
+                                        <p class="font-serif text-lg font-semibold text-charcoal leading-none">Ariel Jude</p>
+                                        <p class="text-[11px] text-slateMuted mt-1 tracking-wide">Operations • Design • Mechanical Eng.</p>
+                                    </div>
+                                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-950/5 border border-emerald-800/20 text-[10px] font-medium uppercase tracking-wider text-emerald-900">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+                                        Available
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         3. CORE SERVICES SHOWCASE (Interactive 6-Card Grid with Filters & Modal)
+         ===================================================================== -->
+    <section id="services" class="py-20 sm:py-28 bg-cream/60 border-y border-borderSubtle">
+        <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
+            
+            <!-- Section Header & Category Filter Controls -->
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14">
+                <div class="max-w-2xl">
+                    <span class="text-xs uppercase tracking-[0.22em] font-medium text-champagne">Practice Areas</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-charcoal mt-3 leading-tight">
+                        Multidisciplinary Capabilities Tailored to Your Workflow
+                    </h2>
+                </div>
+
+                <!-- Interactive Filter Pills -->
+                <div id="service-filters" class="flex flex-wrap items-center gap-2" role="tablist" aria-label="Filter services by discipline">
+                    <button data-filter="all" class="filter-btn active px-4 py-2.5 rounded-full text-xs uppercase tracking-[0.14em] font-medium transition-all duration-200 bg-charcoal text-alabaster border border-charcoal">
+                        All Services (06)
+                    </button>
+                    <button data-filter="executive" class="filter-btn px-4 py-2.5 rounded-full text-xs uppercase tracking-[0.14em] font-medium transition-all duration-200 bg-alabaster text-slateMuted border border-borderSubtle hover:border-charcoal/40 hover:text-charcoal">
+                        Executive & Admin
+                    </button>
+                    <button data-filter="creative" class="filter-btn px-4 py-2.5 rounded-full text-xs uppercase tracking-[0.14em] font-medium transition-all duration-200 bg-alabaster text-slateMuted border border-borderSubtle hover:border-charcoal/40 hover:text-charcoal">
+                        Creative & Digital
+                    </button>
+                    <button data-filter="technical" class="filter-btn px-4 py-2.5 rounded-full text-xs uppercase tracking-[0.14em] font-medium transition-all duration-200 bg-alabaster text-slateMuted border border-borderSubtle hover:border-charcoal/40 hover:text-charcoal">
+                        Technical & Finance
+                    </button>
+                </div>
+            </div>
+
+            <!-- 6-Card Services Grid -->
+            <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                
+                <!-- Service 1: Email and Calendar Management -->
+                <article data-category="executive" data-service="Email and Calendar Management" class="service-card group bg-alabaster rounded-2xl p-8 border border-borderSubtle hover:border-champagne/70 shadow-sm hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-cream border border-borderSubtle flex items-center justify-center text-champagne group-hover:bg-charcoal group-hover:text-alabaster transition-colors duration-300">
+                                <i data-lucide="calendar-check" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-serif text-sm italic text-slateMuted">01 / Executive</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-semibold text-charcoal mb-3 group-hover:text-champagneDark transition-colors">
+                            Email & Calendar Management
+                        </h3>
+                        <p class="text-sm text-slateMuted leading-relaxed mb-6">
+                            Disciplined inbox zero protocols, multi-timezone executive scheduling, priority correspondence triage, and seamless travel itinerary coordination so your focus stays on high-leverage decisions.
+                        </p>
+                        <ul class="space-y-2 text-xs text-charcoal/85 border-t border-borderSubtle/80 pt-5 mb-7">
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>Inbox Triage, Filtering & Executive Drafting</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>Conflict-Free Multi-Zone Calendar Architecture</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>Stakeholder Follow-Ups & Travel Logistics</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center justify-between pt-2">
+                        <button type="button" onclick="openServiceModal('email')" class="text-xs uppercase tracking-[0.15em] font-medium text-charcoal hover:text-champagne inline-flex items-center gap-1.5 transition-colors">
+                            <span>View Scope</span>
+                            <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                        </button>
+                        <button type="button" onclick="selectServiceForInquiry('Email and Calendar Management')" class="text-xs font-medium text-champagne hover:text-charcoal inline-flex items-center gap-1 transition-colors">
+                            <span>Inquire</span>
+                            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Service 2: Data Entry and Research -->
+                <article data-category="executive" data-service="Data Entry and Research" class="service-card group bg-alabaster rounded-2xl p-8 border border-borderSubtle hover:border-champagne/70 shadow-sm hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-cream border border-borderSubtle flex items-center justify-center text-champagne group-hover:bg-charcoal group-hover:text-alabaster transition-colors duration-300">
+                                <i data-lucide="database" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-serif text-sm italic text-slateMuted">02 / Intelligence</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-semibold text-charcoal mb-3 group-hover:text-champagneDark transition-colors">
+                            Data Entry & Research
+                        </h3>
+                        <p class="text-sm text-slateMuted leading-relaxed mb-6">
+                            High-accuracy database curation, CRM hygiene, structured market intelligence, and comprehensive competitor benchmarking transformed into clean, decision-ready executive briefs.
+                        </p>
+                        <ul class="space-y-2 text-xs text-charcoal/85 border-t border-borderSubtle/80 pt-5 mb-7">
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>Verified CRM & Spreadsheet Database Migration</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>Market, Vendor & Competitor Deep-Dive Audits</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>Executive Synthesis & Structured Reporting</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center justify-between pt-2">
+                        <button type="button" onclick="openServiceModal('data')" class="text-xs uppercase tracking-[0.15em] font-medium text-charcoal hover:text-champagne inline-flex items-center gap-1.5 transition-colors">
+                            <span>View Scope</span>
+                            <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                        </button>
+                        <button type="button" onclick="selectServiceForInquiry('Data Entry and Research')" class="text-xs font-medium text-champagne hover:text-charcoal inline-flex items-center gap-1 transition-colors">
+                            <span>Inquire</span>
+                            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Service 3: Social Media Support -->
+                <article data-category="creative" data-service="Social Media Support" class="service-card group bg-alabaster rounded-2xl p-8 border border-borderSubtle hover:border-champagne/70 shadow-sm hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-cream border border-borderSubtle flex items-center justify-center text-champagne group-hover:bg-charcoal group-hover:text-alabaster transition-colors duration-300">
+                                <i data-lucide="share-2" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-serif text-sm italic text-slateMuted">03 / Digital Presence</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-semibold text-charcoal mb-3 group-hover:text-champagneDark transition-colors">
+                            Social Media Support
+                        </h3>
+                        <p class="text-sm text-slateMuted leading-relaxed mb-6">
+                            Cohesive editorial content calendars, multi-platform publishing, thoughtful audience engagement, and monthly performance analytics that sustain an authoritative digital presence.
+                        </p>
+                        <ul class="space-y-2 text-xs text-charcoal/85 border-t border-borderSubtle/80 pt-5 mb-7">
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>Editorial Calendar & Omnichannel Scheduling</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>Brand-Aligned Copywriting & Community Care</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>Engagement Metrics & Growth Insights</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center justify-between pt-2">
+                        <button type="button" onclick="openServiceModal('social')" class="text-xs uppercase tracking-[0.15em] font-medium text-charcoal hover:text-champagne inline-flex items-center gap-1.5 transition-colors">
+                            <span>View Scope</span>
+                            <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                        </button>
+                        <button type="button" onclick="selectServiceForInquiry('Social Media Support')" class="text-xs font-medium text-champagne hover:text-charcoal inline-flex items-center gap-1 transition-colors">
+                            <span>Inquire</span>
+                            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Service 4: Graphic Design -->
+                <article data-category="creative" data-service="Graphic Design" class="service-card group bg-alabaster rounded-2xl p-8 border border-borderSubtle hover:border-champagne/70 shadow-sm hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-cream border border-borderSubtle flex items-center justify-center text-champagne group-hover:bg-charcoal group-hover:text-alabaster transition-colors duration-300">
+                                <i data-lucide="pen-tool" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-serif text-sm italic text-slateMuted">04 / Visual Identity</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-semibold text-charcoal mb-3 group-hover:text-champagneDark transition-colors">
+                            Graphic Design
+                        </h3>
+                        <p class="text-sm text-slateMuted leading-relaxed mb-6">
+                            Refined visual storytelling across investor pitch decks, brand identity collateral, digital campaigns, and publication-grade documents crafted with typographic discipline.
+                        </p>
+                        <ul class="space-y-2 text-xs text-charcoal/85 border-t border-borderSubtle/80 pt-5 mb-7">
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>Executive Pitch Decks & Corporate Profiles</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>Brand Guidelines, Typography & Visual Assets</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>Digital & Print Marketing Collateral</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center justify-between pt-2">
+                        <button type="button" onclick="openServiceModal('design')" class="text-xs uppercase tracking-[0.15em] font-medium text-charcoal hover:text-champagne inline-flex items-center gap-1.5 transition-colors">
+                            <span>View Scope</span>
+                            <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                        </button>
+                        <button type="button" onclick="selectServiceForInquiry('Graphic Design')" class="text-xs font-medium text-champagne hover:text-charcoal inline-flex items-center gap-1 transition-colors">
+                            <span>Inquire</span>
+                            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Service 5: Bookkeeping -->
+                <article data-category="technical" data-service="Bookkeeping" class="service-card group bg-alabaster rounded-2xl p-8 border border-borderSubtle hover:border-champagne/70 shadow-sm hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-cream border border-borderSubtle flex items-center justify-center text-champagne group-hover:bg-charcoal group-hover:text-alabaster transition-colors duration-300">
+                                <i data-lucide="book-open-check" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-serif text-sm italic text-slateMuted">05 / Financial Order</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-semibold text-charcoal mb-3 group-hover:text-champagneDark transition-colors">
+                            Bookkeeping
+                        </h3>
+                        <p class="text-sm text-slateMuted leading-relaxed mb-6">
+                            Methodical general ledger maintenance, expense categorization, accounts receivable/payable tracking, bank reconciliation, and transparent monthly financial summaries.
+                        </p>
+                        <ul class="space-y-2 text-xs text-charcoal/85 border-t border-borderSubtle/80 pt-5 mb-7">
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>General Ledger & Expense Categorization</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>Invoicing, Accounts Tracking & Reconciliation</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>Clean Monthly P&L & Cash-Flow Summaries</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center justify-between pt-2">
+                        <button type="button" onclick="openServiceModal('bookkeeping')" class="text-xs uppercase tracking-[0.15em] font-medium text-charcoal hover:text-champagne inline-flex items-center gap-1.5 transition-colors">
+                            <span>View Scope</span>
+                            <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                        </button>
+                        <button type="button" onclick="selectServiceForInquiry('Bookkeeping')" class="text-xs font-medium text-champagne hover:text-charcoal inline-flex items-center gap-1 transition-colors">
+                            <span>Inquire</span>
+                            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Service 6: Mechanical Engineering Works -->
+                <article data-category="technical" data-service="Mechanical Engineering Works" class="service-card group bg-alabaster rounded-2xl p-8 border border-borderSubtle hover:border-champagne/70 shadow-sm hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-cream border border-borderSubtle flex items-center justify-center text-champagne group-hover:bg-charcoal group-hover:text-alabaster transition-colors duration-300">
+                                <i data-lucide="compass" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-serif text-sm italic text-slateMuted">06 / Engineering</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-semibold text-charcoal mb-3 group-hover:text-champagneDark transition-colors">
+                            Mechanical Engineering Works
+                        </h3>
+                        <p class="text-sm text-slateMuted leading-relaxed mb-6">
+                            Precision 2D/3D CAD drafting, mechanical component modeling, engineering calculations, bill-of-materials structuring, and technical documentation built to industry standards.
+                        </p>
+                        <ul class="space-y-2 text-xs text-charcoal/85 border-t border-borderSubtle/80 pt-5 mb-7">
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>2D Technical Schematics & 3D CAD Modeling</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>Mechanical System & Load Calculations</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1 h-1 rounded-full bg-champagne"></span>
+                                <span>BOM Preparation & Engineering Specifications</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center justify-between pt-2">
+                        <button type="button" onclick="openServiceModal('engineering')" class="text-xs uppercase tracking-[0.15em] font-medium text-charcoal hover:text-champagne inline-flex items-center gap-1.5 transition-colors">
+                            <span>View Scope</span>
+                            <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                        </button>
+                        <button type="button" onclick="selectServiceForInquiry('Mechanical Engineering Works')" class="text-xs font-medium text-champagne hover:text-charcoal inline-flex items-center gap-1 transition-colors">
+                            <span>Inquire</span>
+                            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         4. WHY PARTNER WITH ARIEL JUDE (3-Column Value Proposition)
+         ===================================================================== -->
+    <section id="approach" class="py-20 sm:py-28 bg-alabaster">
+        <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
+            <div class="max-w-3xl mb-16">
+                <span class="text-xs uppercase tracking-[0.22em] font-medium text-champagne">The Standard of Engagement</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-charcoal mt-3 leading-tight">
+                    An Engineering Mindset Applied to Every Facet of Your Business
+                </h2>
+                <p class="text-base text-slateMuted mt-4 leading-relaxed font-light">
+                    Whether reconciling financial ledgers, designing an investor deck, or drafting mechanical assemblies, every deliverable is governed by three foundational principles.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+                <!-- Pillar 1 -->
+                <div class="p-8 rounded-2xl bg-white border border-borderSubtle/90 shadow-sm">
+                    <span class="font-serif text-3xl italic text-champagne block mb-5">I.</span>
+                    <h3 class="font-serif text-2xl font-semibold text-charcoal mb-3">Multidisciplinary Versatility</h3>
+                    <p class="text-sm text-slateMuted leading-relaxed">
+                        Eliminate the friction of managing fragmented contractors. Seamlessly integrate executive administration, visual design, bookkeeping, and technical mechanical engineering under one unified, cohesive partner.
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="p-8 rounded-2xl bg-white border border-borderSubtle/90 shadow-sm">
+                    <span class="font-serif text-3xl italic text-champagne block mb-5">II.</span>
+                    <h3 class="font-serif text-2xl font-semibold text-charcoal mb-3">Meticulous Precision</h3>
+                    <p class="text-sm text-slateMuted leading-relaxed">
+                        Grounded in formal mechanical engineering discipline, every spreadsheet, calendar block, CAD tolerance, and brand layout undergoes rigorous verification before reaching your desk.
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="p-8 rounded-2xl bg-white border border-borderSubtle/90 shadow-sm">
+                    <span class="font-serif text-3xl italic text-champagne block mb-5">III.</span>
+                    <h3 class="font-serif text-2xl font-semibold text-charcoal mb-3">Confidential Reliability</h3>
+                    <p class="text-sm text-slateMuted leading-relaxed">
+                        Sensitive financial records, proprietary engineering schematics, and executive correspondence are handled with strict discretion, structured documentation, and dependable turnaround commitments.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         5. INTERACTIVE CONSULTATION & MULTI-SERVICE INQUIRY SECTION
+         ===================================================================== -->
+    <section id="contact" class="py-20 sm:py-28 bg-charcoal text-alabaster relative overflow-hidden">
+        <!-- Subtle Architectural Accent -->
+        <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+                
+                <!-- Left Column: Direct Details & Engagement Models -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs uppercase tracking-[0.22em] font-medium text-champagne">Initiate a Conversation</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-alabaster mt-3 leading-tight">
+                            Let’s Structure Your Next Milestone.
+                        </h2>
+                        <p class="text-sm sm:text-base text-alabaster/75 mt-4 leading-relaxed font-light">
+                            Select the disciplines you require and share a brief overview of your objectives. I respond to all inquiries within one business day with a tailored engagement structure.
+                        </p>
+                    </div>
+
+                    <!-- Engagement Options -->
+                    <div class="space-y-4 pt-4 border-t border-alabaster/15">
+                        <div class="flex items-start gap-4">
+                            <div class="w-9 h-9 rounded-lg bg-alabaster/5 border border-alabaster/15 flex items-center justify-center text-champagne shrink-0 mt-0.5">
+                                <i data-lucide="clock" class="w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-lg font-medium text-alabaster">Dedicated Monthly Retainer</h4>
+                                <p class="text-xs text-alabaster/70 leading-relaxed mt-0.5">Ongoing executive operations, bookkeeping, and creative support tailored to your weekly cadence.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-9 h-9 rounded-lg bg-alabaster/5 border border-alabaster/15 flex items-center justify-center text-champagne shrink-0 mt-0.5">
+                                <i data-lucide="layers" class="w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-lg font-medium text-alabaster">Project-Based & Engineering Scopes</h4>
+                                <p class="text-xs text-alabaster/70 leading-relaxed mt-0.5">Fixed-scope mechanical CAD drafting, market research studies, ledger cleanups, or brand collateral.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Contact Info -->
+                    <div class="p-6 rounded-2xl bg-alabaster/[0.04] border border-alabaster/10 space-y-3">
+                        <p class="text-[11px] uppercase tracking-[0.2em] text-champagne">Direct Correspondence</p>
+                        <div class="flex items-center justify-between gap-3">
+                            <span id="email-text" class="text-sm font-medium text-alabaster">contact@arieljude.com</span>
+                            <button type="button" onclick="copyEmailAddress()" class="px-3 py-1.5 rounded-lg bg-alabaster/10 hover:bg-champagne text-xs text-alabaster transition-colors inline-flex items-center gap-1.5">
+                                <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                                <span id="copy-label">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Multi-Service Inquiry Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-alabaster text-charcoal rounded-2xl p-7 sm:p-10 shadow-2xl border border-borderSubtle">
+                        <form id="inquiry-form" class="space-y-6" novalidate>
+                            <div>
+                                <label class="block text-xs uppercase tracking-[0.16em] font-semibold text-charcoal mb-3">
+                                    1. Select Services of Interest
+                                </label>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5" id="service-checkboxes">
+                                    <label class="service-pill cursor-pointer flex items-center gap-3 p-3 rounded-xl border border-borderSubtle bg-white hover:border-champagne transition-all select-none">
+                                        <input type="checkbox" name="services" value="Email and Calendar Management" class="accent-champagne w-4 h-4 rounded">
+                                        <span class="text-xs font-medium text-charcoal">Email & Calendar Management</span>
+                                    </label>
+                                    <label class="service-pill cursor-pointer flex items-center gap-3 p-3 rounded-xl border border-borderSubtle bg-white hover:border-champagne transition-all select-none">
+                                        <input type="checkbox" name="services" value="Data Entry and Research" class="accent-champagne w-4 h-4 rounded">
+                                        <span class="text-xs font-medium text-charcoal">Data Entry & Research</span>
+                                    </label>
+                                    <label class="service-pill cursor-pointer flex items-center gap-3 p-3 rounded-xl border border-borderSubtle bg-white hover:border-champagne transition-all select-none">
+                                        <input type="checkbox" name="services" value="Social Media Support" class="accent-champagne w-4 h-4 rounded">
+                                        <span class="text-xs font-medium text-charcoal">Social Media Support</span>
+                                    </label>
+                                    <label class="service-pill cursor-pointer flex items-center gap-3 p-3 rounded-xl border border-borderSubtle bg-white hover:border-champagne transition-all select-none">
+                                        <input type="checkbox" name="services" value="Graphic Design" class="accent-champagne w-4 h-4 rounded">
+                                        <span class="text-xs font-medium text-charcoal">Graphic Design</span>
+                                    </label>
+                                    <label class="service-pill cursor-pointer flex items-center gap-3 p-3 rounded-xl border border-borderSubtle bg-white hover:border-champagne transition-all select-none">
+                                        <input type="checkbox" name="services" value="Bookkeeping" class="accent-champagne w-4 h-4 rounded">
+                                        <span class="text-xs font-medium text-charcoal">Bookkeeping</span>
+                                    </label>
+                                    <label class="service-pill cursor-pointer flex items-center gap-3 p-3 rounded-xl border border-borderSubtle bg-white hover:border-champagne transition-all select-none">
+                                        <input type="checkbox" name="services" value="Mechanical Engineering Works" class="accent-champagne w-4 h-4 rounded">
+                                        <span class="text-xs font-medium text-charcoal">Mechanical Engineering Works</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="client-name" class="block text-xs uppercase tracking-[0.14em] font-medium text-slateMuted mb-2">Full Name *</label>
+                                    <input type="text" id="client-name" name="name" required placeholder="e.g. Victoria Sterling" class="w-full px-4 py-3 rounded-xl bg-white border border-borderSubtle text-sm text-charcoal placeholder:text-slateMuted/50 focus:outline-none focus:border-champagne transition-colors">
+                                </div>
+                                <div>
+                                    <label for="client-email" class="block text-xs uppercase tracking-[0.14em] font-medium text-slateMuted mb-2">Work Email *</label>
+                                    <input type="email" id="client-email" name="email" required placeholder="victoria@company.com" class="w-full px-4 py-3 rounded-xl bg-white border border-borderSubtle text-sm text-charcoal placeholder:text-slateMuted/50 focus:outline-none focus:border-champagne transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="project-brief" class="block text-xs uppercase tracking-[0.14em] font-medium text-slateMuted mb-2">Project Scope or Operational Needs *</label>
+                                <textarea id="project-brief" name="brief" rows="4" required placeholder="Share your timeline, deliverables, or ongoing support requirements..." class="w-full px-4 py-3 rounded-xl bg-white border border-borderSubtle text-sm text-charcoal placeholder:text-slateMuted/50 focus:outline-none focus:border-champagne transition-colors resize-none"></textarea>
+                            </div>
+
+                            <!-- Inline Validation Message Box -->
+                            <div id="form-error" class="hidden p-3.5 rounded-xl bg-red-50 border border-red-200 text-xs text-red-800">
+                                Please provide your name, a valid email address, and a brief description of your inquiry.
+                            </div>
+
+                            <button type="submit" class="w-full py-4 px-6 rounded-full bg-charcoal text-alabaster text-xs uppercase tracking-[0.18em] font-medium hover:bg-champagne transition-colors duration-300 shadow-editorial flex items-center justify-center gap-2.5">
+                                <span>Transmit Consultation Inquiry</span>
+                                <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                            </button>
+                        </form>
+
+                        <!-- Instant Interactive Confirmation State -->
+                        <div id="inquiry-confirmation" class="hidden py-8 text-center space-y-5">
+                            <div class="w-14 h-14 rounded-full bg-champagne/15 border border-champagne/40 text-champagne flex items-center justify-center mx-auto">
+                                <i data-lucide="check" class="w-7 h-7"></i>
+                            </div>
+                            <h3 class="font-serif text-3xl font-semibold text-charcoal">Inquiry Received</h3>
+                            <p id="confirmation-summary" class="text-sm text-slateMuted max-w-md mx-auto leading-relaxed">
+                                Thank you. Your consultation request has been logged, and Ariel Jude will respond promptly with next steps.
+                            </p>
+                            <div class="pt-2">
+                                <button type="button" onclick="resetInquiryForm()" class="px-6 py-2.5 rounded-full border border-borderSubtle text-xs uppercase tracking-[0.15em] font-medium text-charcoal hover:bg-cream transition-colors">
+                                    Submit Another Inquiry
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         6. MINIMALIST FOOTER
+         ===================================================================== -->
+    <footer class="bg-charcoal text-alabaster/70 border-t border-alabaster/10 py-12">
+        <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <span class="font-serif text-xl font-semibold text-alabaster">Ariel Jude</span>
+                <span class="text-alabaster/30">|</span>
+                <span class="text-xs tracking-wider uppercase text-alabaster/60">Executive Operations, Design & Mechanical Engineering</span>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-center gap-6 text-xs">
+                <a href="#about" class="hover:text-champagne transition-colors">Profile</a>
+                <a href="#services" class="hover:text-champagne transition-colors">Services</a>
+                <a href="#approach" class="hover:text-champagne transition-colors">Standards</a>
+                <a href="#contact" class="hover:text-champagne transition-colors">Contact</a>
+            </div>
+
+            <p class="text-xs text-alabaster/50">
+                &copy; <span id="current-year"></span> Ariel Jude. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- =====================================================================
+         SERVICE SCOPE DETAIL MODAL (Accessible Editorial Drawer/Modal)
+         ===================================================================== -->
+    <div id="service-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 bg-charcoal/60 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="bg-alabaster rounded-2xl max-w-xl w-full p-7 sm:p-9 border border-borderSubtle shadow-2xl relative animate-fadeIn">
+            <button type="button" onclick="closeServiceModal()" aria-label="Close modal" class="absolute top-6 right-6 p-2 rounded-full bg-cream text-charcoal hover:bg-charcoal hover:text-alabaster transition-colors">
+                <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+
+            <span id="modal-category" class="text-[11px] uppercase tracking-[0.2em] font-medium text-champagne">Practice Scope</span>
+            <h3 id="modal-title" class="font-serif text-3xl font-semibold text-charcoal mt-2 mb-4">Service Title</h3>
+            <p id="modal-description" class="text-sm text-slateMuted leading-relaxed mb-6">Detailed description.</p>
+
+            <div class="bg-white rounded-xl p-5 border border-borderSubtle mb-7">
+                <h4 class="text-xs uppercase tracking-[0.15em] font-semibold text-charcoal mb-3">Key Deliverables & Tools</h4>
+                <ul id="modal-deliverables" class="space-y-2.5 text-xs text-charcoal/90"></ul>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-end gap-3">
+                <button type="button" onclick="closeServiceModal()" class="w-full sm:w-auto px-5 py-2.5 rounded-full border border-borderSubtle text-xs uppercase tracking-[0.15em] font-medium text-slateMuted hover:text-charcoal">
+                    Close
+                </button>
+                <button type="button" id="modal-inquire-btn" class="w-full sm:w-auto px-6 py-2.5 rounded-full bg-charcoal text-alabaster text-xs uppercase tracking-[0.15em] font-medium hover:bg-champagne transition-colors">
+                    Select This Service
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====================================================================
+         INTERACTIVE PORTFOLIO SCRIPT
+         ===================================================================== -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Set dynamic copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Category Filter Logic for Core Services
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const serviceCards = document.querySelectorAll('.service-card');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const selectedFilter = btn.getAttribute('data-filter');
+
+                // Update button active states
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-charcoal', 'text-alabaster', 'border-charcoal');
+                    b.classList.add('bg-alabaster', 'text-slateMuted', 'border-borderSubtle');
+                });
+                btn.classList.remove('bg-alabaster', 'text-slateMuted', 'border-borderSubtle');
+                btn.classList.add('bg-charcoal', 'text-alabaster', 'border-charcoal');
+
+                // Filter cards smoothly
+                serviceCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    if (selectedFilter === 'all' || cardCategory === selectedFilter) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Detailed Service Modal Data
+        const serviceDetails = {
+            email: {
+                category: 'Executive & Administrative Operations',
+                title: 'Email & Calendar Management',
+                serviceValue: 'Email and Calendar Management',
+                description: 'Reclaim hours of executive bandwidth every week. I establish structured inbox hierarchies, draft polished correspondence on your behalf, and manage complex global scheduling with zero overlap.',
+                deliverables: [
+                    'Daily Inbox Zero triage, labeling, and priority escalation protocols',
+                    'Executive appointment scheduling across multiple time zones (Google Workspace & Outlook)',
+                    'Board meeting preparation, agenda circulation, and follow-up tracking',
+                    'End-to-end domestic and international travel itinerary management'
+                ]
+            },
+            data: {
+                category: 'Executive & Intelligence Operations',
+                title: 'Data Entry & Research',
+                serviceValue: 'Data Entry and Research',
+                description: 'High-precision information management and primary/secondary research designed to eliminate guesswork and keep your internal databases impeccably organized.',
+                deliverables: [
+                    'Accurate data entry, deduplication, and validation across Excel, Notion, Airtable & CRMs',
+                    'Competitive landscape analysis, vendor sourcing, and pricing benchmarks',
+                    'Lead enrichment and structured prospect list compilation',
+                    'Concise executive research briefs with cited sources'
+                ]
+            },
+            social: {
+                category: 'Creative & Digital Presence',
+                title: 'Social Media Support',
+                serviceValue: 'Social Media Support',
+                description: 'Maintain a consistent, authoritative voice across LinkedIn, Instagram, and X without daily distraction. Every post is scheduled thoughtfully and aligned with your brand standards.',
+                deliverables: [
+                    'Monthly content calendar planning and multi-channel post scheduling',
+                    'Executive ghostwriting and caption refinement tailored to your industry',
+                    'Proactive comment moderation, DM triage, and audience engagement',
+                    'Monthly analytics reporting tracking reach, engagement, and growth trends'
+                ]
+            },
+            design: {
+                category: 'Creative & Visual Identity',
+                title: 'Graphic Design',
+                serviceValue: 'Graphic Design',
+                description: 'Elevated visual communication that commands trust. From boardroom-ready slide decks to cohesive social templates and print collateral, every asset is crafted with editorial restraint.',
+                deliverables: [
+                    'Investor pitch decks, capability statements, and executive presentations',
+                    'Brand identity assets, typography systems, and social media template suites',
+                    'Brochures, whitepapers, technical datasheets, and event collateral',
+                    'Clean, print-ready and web-optimized source files'
+                ]
+            },
+            bookkeeping: {
+                category: 'Technical & Financial Order',
+                title: 'Bookkeeping',
+                serviceValue: 'Bookkeeping',
+                description: 'Maintain clear visibility into your financial health with disciplined, audit-ready bookkeeping that keeps expenses categorized and accounts reconciled month after month.',
+                deliverables: [
+                    'Chart of accounts organization and accurate transaction categorization',
+                    'Monthly bank and credit card statement reconciliations',
+                    'Client invoicing, accounts receivable follow-ups, and vendor bill tracking',
+                    'Clear monthly Profit & Loss, Balance Sheet, and cash-flow summaries'
+                ]
+            },
+            engineering: {
+                category: 'Technical & Engineering Solutions',
+                title: 'Mechanical Engineering Works',
+                serviceValue: 'Mechanical Engineering Works',
+                description: 'Specialized mechanical engineering support combining analytical rigor with practical manufacturability—ideal for product developers, contractors, and engineering consultancies.',
+                deliverables: [
+                    '2D technical drawings, orthographic projections, and GD&T detailing',
+                    '3D parametric CAD part and assembly modeling',
+                    'Engineering calculations, material selection, and mechanical system sizing',
+                    'Structured Bills of Materials (BOM) and technical specification documentation'
+                ]
+            }
+        };
+
+        const modal = document.getElementById('service-modal');
+        const modalCategory = document.getElementById('modal-category');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+        const modalDeliverables = document.getElementById('modal-deliverables');
+        const modalInquireBtn = document.getElementById('modal-inquire-btn');
+
+        function openServiceModal(key) {
+            const data = serviceDetails[key];
+            if (!data) return;
+
+            modalCategory.textContent = data.category;
+            modalTitle.textContent = data.title;
+            modalDescription.textContent = data.description;
+            modalDeliverables.innerHTML = data.deliverables
+                .map(item => `<li class="flex items-start gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-champagne mt-1.5 shrink-0"></span><span>${item}</span></li>`)
+                .join('');
+
+            modalInquireBtn.onclick = () => {
+                closeServiceModal();
+                selectServiceForInquiry(data.serviceValue);
+            };
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeServiceModal() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal on backdrop click or Escape key
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeServiceModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                closeServiceModal();
+            }
+        });
+
+        // Pre-select service checkbox and scroll smoothly to inquiry form
+        function selectServiceForInquiry(serviceName) {
+            const checkboxes = document.querySelectorAll('input[name="services"]');
+            checkboxes.forEach(cb => {
+                if (cb.value === serviceName) {
+                    cb.checked = true;
+                    cb.closest('.service-pill').classList.add('border-champagne', 'bg-cream/50');
+                }
+            });
+
+            // Reset confirmation view if user previously submitted
+            document.getElementById('inquiry-confirmation').classList.add('hidden');
+            document.getElementById('inquiry-form').classList.remove('hidden');
+
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Highlight checked service pills dynamically
+        document.querySelectorAll('input[name="services"]').forEach(cb => {
+            cb.addEventListener('change', () => {
+                const pill = cb.closest('.service-pill');
+                if (cb.checked) {
+                    pill.classList.add('border-champagne', 'bg-cream/50');
+                } else {
+                    pill.classList.remove('border-champagne', 'bg-cream/50');
+                }
+            });
+        });
+
+        // Copy Email Utility (iFrame-safe execCommand fallback)
+        function copyEmailAddress() {
+            const email = document.getElementById('email-text').textContent;
+            const tempInput = document.createElement('input');
+            tempInput.value = email;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            try {
+                document.execCommand('copy');
+                const label = document.getElementById('copy-label');
+                label.textContent = 'Copied';
+                setTimeout(() => { label.textContent = 'Copy'; }, 2000);
+            } catch (err) {
+                console.error('Copy failed', err);
+            }
+            document.body.removeChild(tempInput);
+        }
+
+        // Consultation Form Submission Handling
+        const inquiryForm = document.getElementById('inquiry-form');
+        const formError = document.getElementById('form-error');
+        const inquiryConfirmation = document.getElementById('inquiry-confirmation');
+        const confirmationSummary = document.getElementById('confirmation-summary');
+
+        inquiryForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('client-name').value.trim();
+            const email = document.getElementById('client-email').value.trim();
+            const brief = document.getElementById('project-brief').value.trim();
+            const selectedServices = Array.from(document.querySelectorAll('input[name="services"]:checked'))
+                .map(cb => cb.value);
+
+            const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+            if (!name || !emailValid || !brief) {
+                formError.classList.remove('hidden');
+                return;
+            }
+
+            formError.classList.add('hidden');
+
+            const servicesText = selectedServices.length > 0
+                ? ` regarding <strong>${selectedServices.join(', ')}</strong>`
+                : '';
+
+            confirmationSummary.innerHTML = `Thank you, <strong class="text-charcoal">${escapeHTML(name)}</strong>. Your consultation brief${servicesText} has been received. Ariel Jude will follow up at <strong class="text-charcoal">${escapeHTML(email)}</strong> within one business day.`;
+
+            inquiryForm.classList.add('hidden');
+            inquiryConfirmation.classList.remove('hidden');
+        });
+
+        function resetInquiryForm() {
+            inquiryForm.reset();
+            document.querySelectorAll('.service-pill').forEach(p => {
+                p.classList.remove('border-champagne', 'bg-cream/50');
+            });
+            inquiryConfirmation.classList.add('hidden');
+            inquiryForm.classList.remove('hidden');
+        }
+
+        function escapeHTML(str) {
+            return str.replace(/[&<>"']/g, tag => ({
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#39;'
+            }[tag]));
+        }
+    </script>
+</body>
+</html>
